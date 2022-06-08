@@ -20,7 +20,7 @@ So, in the end, Ganimede.E12 is a development board with the following character
 # Board Description
 The hardware details of the board are resumed in the picture below:
 
-![HwDetails](https://github.com/ffich/Ganiemede.E12/blob/main/00_GettingStarted/10_Resources/10_Images/HwDetails.png)
+![HwDetails](https://static.wixstatic.com/media/2492ae_2b2e0d6cc230491f92e3bd0d91141a82~mv2.png/v1/fill/w_1467,h_647,al_c/2492ae_2b2e0d6cc230491f92e3bd0d91141a82~mv2.png)
 
 ## Main characteristics:
 - USB connection for communication, Power and Flashing
@@ -33,7 +33,10 @@ The hardware details of the board are resumed in the picture below:
 - 1x Neopixel/1-wire Connector
 - 2x OLED Connectors
 
-If you want more information you can have a look at the [Ganimede.E12 Datasheet](https://2492ae4f-d323-49c0-bc1e-8d5936f83a9d.usrfiles.com/ugd/2492ae_11933c1aee514b55b51fd540d7772119.pdf)
+If you want more information you can have a look at the [Ganimede.E12 Datasheet](https://2492ae4f-d323-49c0-bc1e-8d5936f83a9d.usrfiles.com/ugd/2492ae_11933c1aee514b55b51fd540d7772119.pdf) and to the [Ganimede.E12 Product Page](https://frafich.wixsite.com/jupitersystem/product-page/ganimede-e12).
+
+
+
 
 
 
