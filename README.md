@@ -20,11 +20,8 @@ So, in the end, Ganimede.E12 is a development board with the following character
 # Board Description
 The characteristics of the board are resumed in the picture below:
 
-<<<<<<< HEAD
-![HwDetails](.\00_GettingStarted\10_Resources\10_Images\HwDetails.png)
-=======
 ![HwDetails](https://github.com/ffich/Ganiemede.E12/blob/main/00_GettingStarted/10_Resources/10_Images/HwDetails.png)
->>>>>>> 8b9c39130a443588e7ff90e98858b078af9bd687
+
 
 
 
