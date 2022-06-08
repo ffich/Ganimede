@@ -1,7 +1,7 @@
 # Ganiemede.E12
 Public Repo for Ganimede.E12 board. 
 
-# Description
+# Repo Description
 This repo contains some getting started material and some example for using Ganimede.E12 with Python, C/C++ and Javascript.
 
 # What Ganimede.E12 is?
@@ -16,6 +16,11 @@ So, in the end, Ganimede.E12 is a development board with the following character
 4. It's really cheap, target price is 15€
 5. It's open hardware, I will share schematics and design files
 6. It's really simple to use
+
+# Board Description
+The characteristics of the board are resumed in the picture below:
+
+![HwDetails](\00_GettingStarted\10_Resources\10_Images\HwDetails.png)
 
 
 
