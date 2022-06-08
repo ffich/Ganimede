@@ -23,7 +23,7 @@ The characteristics of the board are resumed in the picture below:
 ![HwDetails](https://github.com/ffich/Ganiemede.E12/blob/main/00_GettingStarted/10_Resources/10_Images/HwDetails.png)
 
 
-
+bla bla bla
 
 
 
