@@ -22,7 +22,7 @@ The hardware details of the board are resumed in the picture below:
 
 ![HwDetails](https://github.com/ffich/Ganiemede.E12/blob/main/00_GettingStarted/10_Resources/10_Images/HwDetails.png)
 
-#### Main characteristics:
+## Main characteristics:
 - USB connection for communication, Power and Flashing
 - WiFi
 - 11x GPIO
