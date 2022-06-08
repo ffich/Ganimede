@@ -18,14 +18,22 @@ So, in the end, Ganimede.E12 is a development board with the following character
 6. It's really simple to use
 
 # Board Description
-The characteristics of the board are resumed in the picture below:
+The hardware details of the board are resumed in the picture below:
 
 ![HwDetails](https://github.com/ffich/Ganiemede.E12/blob/main/00_GettingStarted/10_Resources/10_Images/HwDetails.png)
 
+#### Main characteristics:
+- USB connection for communication, Power and Flashing
+- WiFi
+- 11x GPIO
+- 2x User LEDs
+- 2x User buttons
+- 1x MikroBUS Socket
+- 1x Grove Connector
+- 1x Neopixel/1-wire Connector
+- 2x OLED Connectors
 
-bla bla bla
-
-
+If you want more information you can have a look at the [Ganimede.E12 Datasheet](https://2492ae4f-d323-49c0-bc1e-8d5936f83a9d.usrfiles.com/ugd/2492ae_11933c1aee514b55b51fd540d7772119.pdf)
 
 
 
