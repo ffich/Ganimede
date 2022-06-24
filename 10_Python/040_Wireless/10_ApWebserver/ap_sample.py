@@ -9,7 +9,7 @@ from machine import Pin
 relay = Pin(16, Pin.OUT)
 relay.off()
 
-ssid = "Ganiemede.E12"
+ssid = "ganiemede"
 password = "ganimede"
 
 ap = network.WLAN(network.AP_IF)
