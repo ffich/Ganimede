@@ -12,3 +12,6 @@ Connect the Grove Sensor on the Grove connector and the OLED dislay on CN6 or CN
 
 ## Additional comments
 None
+
+## Note for HW 0.2 Beta-Testers
+Due to an HW design error in order for the example to work you have to remove R3 resistor. The issue will be fixed in the next HW version.
