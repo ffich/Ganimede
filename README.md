@@ -2,7 +2,7 @@
 Public Repository for Ganimede board family. 
 
 # Repo Description
-This repo contains some getting started material and some example for using Ganimede.E12 with Python, C/C++ and Javascript.
+This repo contains some getting started material and some example for using Ganimede with Python, C/C++ and Javascript.
 
 # What Ganimede is?
 The Ganimede is a family of fancy development boards based on ESP8266 and ESP32 SoC from EspressIf (I will probably make a version based on R2040 as well).
