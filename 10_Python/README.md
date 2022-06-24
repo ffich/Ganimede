@@ -1,10 +1,1 @@
-# Example Description
-
-
-# Required HW
-
-
-# Setup Instructions
-
-
-# Additional comments
+# Getting Started with MicroPython and Ganimede
