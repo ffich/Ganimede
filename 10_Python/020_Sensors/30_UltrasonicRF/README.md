@@ -1,4 +1,3 @@
-
 ## Example Description
 This example read a Grove Ultrasonic Distance Sensor at a rate of 5ms and if detects an object in a 10cm range, it turns a relay on for 2 seconds.
 
