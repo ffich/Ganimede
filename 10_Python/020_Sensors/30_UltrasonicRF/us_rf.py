@@ -3,7 +3,7 @@ from usrf_grove import USRF
 from machine import Pin
 
 Sensor = USRF(pin = 5, echo_timeout_us = 1000000)
-Relay = Pin(16, Pin.OUT)
+Relay = Pin(15, Pin.OUT)
 
 while (True):
     time.sleep_ms(5)
