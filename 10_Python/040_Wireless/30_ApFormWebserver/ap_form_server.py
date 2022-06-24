@@ -75,7 +75,7 @@ def web_page():
 """
   return html
 
-SSID = "Ganimede.E12"
+SSID = "ganimede"
 PWD = "ganimede"
 
 ap_if = network.WLAN(network.AP_IF)

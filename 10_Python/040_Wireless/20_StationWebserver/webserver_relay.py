@@ -4,7 +4,18 @@ import esp
 esp.osdebug(None)
 import gc
 gc.collect()
-from machine import Pin
+from machine import Pin, I2C
+import ssd1306
+
+ip = ""
+
+# Sensor I2C
+i2c = I2C(scl=Pin(5), sda=Pin(4), freq=100000)
+
+# OLED
+oled_width = 128
+oled_height = 64
+oled = ssd1306.SSD1306_I2C(oled_width, oled_height, i2c)
 
 relay = Pin(16, Pin.OUT)
 relay.off()
@@ -60,6 +71,9 @@ color: white; padding: 30px 80px; text-decoration: none; font-size: 50px; margin
     return html  
 
 def do_connect():
+    global oled
+    global ip
+    
     sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():
         print('connecting to network...')
@@ -69,6 +83,12 @@ def do_connect():
             pass
     print('network config:', sta_if.ifconfig())
     
+    oled.fill(0)
+    ip = sta_if.ifconfig()
+    oled.text('IP: ', 0, 0)
+    oled.text(str(ip[0]), 0, 10)
+    oled.show()    
+    
 do_connect()
 
 addr = socket.getaddrinfo('0.0.0.0', 80)[0][-1]
@@ -77,14 +97,27 @@ s.bind(addr)
 s.listen(5)
 
 while True:
-  conn, addr = s.accept()
-  print('Got a connection from %s' % str(addr))
-  request = conn.recv(1024)
-  #print('Content = %s' % str(request))
-  if 'GET /?relay=on' in request:
-    relay.on()
-  if 'GET /?relay=off' in request:
-    relay.off() 
-  response = web_page()
-  conn.send(response)
-  conn.close()
+    conn, addr = s.accept()
+    print('Got a connection from %s' % str(addr))
+    request = conn.recv(1024)
+    #print('Content = %s' % str(request))
+    if 'GET /?relay=on' in request:
+        relay.on()
+        relay_sts = 1
+
+    if 'GET /?relay=off' in request:
+        relay.off()
+        relay_sts = 0
+
+    oled.fill(0)
+    oled.text('IP: ', 0, 0)
+    oled.text(str(ip[0]), 0, 10)
+    oled.text('Relay: ', 0, 40)
+    if relay_sts:
+        oled.text('ON', 50, 40)
+    else:
+        oled.text('OFF', 50, 40)
+    oled.show()
+    response = web_page()
+    conn.send(response)
+    conn.close()
