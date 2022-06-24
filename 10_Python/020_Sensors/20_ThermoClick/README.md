@@ -8,7 +8,7 @@ This example read a Texas Instruments TMP102 I2C digialt temperature sensor (on 
 - [Thermo 3 click](https://www.mikroe.com/thermo-3-click)
 
 ## Setup Instructions
-Connect the Grove Sensor on the Grove connector and the OLED dislay on CN6 or CN7.
+Connect the Thermo click 3 on the Mikrobus socket and the OLED dislay on CN7.
 
 ## Additional comments
 There are no specific driver on micropython for the TMP102 sensor, so the example used the raw I2C to send commands to and read data from the sensor. Check the [TMP102 datasheet](https://download.mikroe.com/documents/datasheets/tmp102-data-sheet.pdf) for additiona details
