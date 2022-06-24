@@ -46,8 +46,8 @@
   - File System (A)
   - Watchdog (A)
   - RTC (A)
-  - Morse Code (F)
-  - uButton (F)
+  - Morse Code
+  - uButton
   - uAsyncIO (F)
   - Machine Learning (F)
 
