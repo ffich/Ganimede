@@ -1,18 +1,18 @@
 import time
 import machine, neopixel
-NEOPIXEL_NUMBER = 60
-np = neopixel.NeoPixel(machine.Pin(4), NEOPIXEL_NUMBER)
+NEOPIXEL_NUMBER = 16
+np = neopixel.NeoPixel(machine.Pin(2), NEOPIXEL_NUMBER)
 
 def demo(np):
     n = np.n
 
     # cycle
-    for i in range(6 * n):
+    for i in range(12 * n):
         for j in range(n):
             np[j] = (0, 0, 0)
         np[i % n] = (255, 255, 255)
         np.write()
-        time.sleep_ms(20)
+        time.sleep_ms(10)
 
     # bounce
     for i in range(6 * n):
@@ -23,7 +23,7 @@ def demo(np):
         else:
             np[n - 1 - (i % n)] = (0, 0, 0)
         np.write()
-        time.sleep_ms(50)
+        time.sleep_ms(10)
 
     # fade in/out
     for i in range(0, 4 * 256, 8):
