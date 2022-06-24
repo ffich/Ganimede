@@ -2,7 +2,8 @@
 This example create an access point with the following credential:
 - SSID: ganimede
 - Password: ganimede
-And then load a webpage that allow to control a relay output (Relay 3 Click).
+
+And then load a webpage at the address 192.168.0.1 that allow to control a relay output (Relay 3 Click).
 
 ## Required HW
 - [Relay 3 Click](https://www.mikroe.com/relay-3-click)
