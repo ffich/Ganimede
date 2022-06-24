@@ -1,4 +1,4 @@
-# Ganiemede
+# Ganimede
 Public Repository for Ganimede board family. 
 
 # Repo Description
