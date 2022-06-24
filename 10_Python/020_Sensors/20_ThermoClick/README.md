@@ -12,3 +12,6 @@ Connect the Grove Sensor on the Grove connector and the OLED dislay on CN6 or CN
 
 ## Additional comments
 There are no specific driver on micropython for the TMP102 sensor, so the example used the raw I2C to send commands to and read data from the sensor. Check the [TMP102 datasheet](https://download.mikroe.com/documents/datasheets/tmp102-data-sheet.pdf) for additiona details
+
+## Video Example
+Check out a [Demonstration Video](https://www.youtube.com/shorts/EVhhhISAZbE). 
