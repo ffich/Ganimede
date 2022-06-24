@@ -14,3 +14,6 @@ There are no specific drivers for the Grove ultrasonic distance sensor, so I've 
 
 ## Video Example
 Check out a [Demonstration Video](https://www.youtube.com/shorts/ZMBBKq8FC8w). 
+
+## Note for HW 0.2 Beta-Testers
+Due to an HW design error in order for the example to work you have to remove R3 resistor. The issue will be fixed in the next HW version.
