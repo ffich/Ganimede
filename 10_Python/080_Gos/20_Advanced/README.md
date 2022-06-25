@@ -10,6 +10,8 @@ G-OS usage is very simple. You first create you task implementation in form of a
 After this you create a scheduler (contructor sch()) and then add the task to the scheduler using the add_task() method. After this you can start the scheduler with the start() method and your task will be dispateched at the defined period. For example, the following code will run the task myTask at 1s rate:
 
 ```
+import g_os
+
 def myTaskCbk():
   print("I'm a Task")
 
