@@ -1,9 +1,16 @@
-from machine import Pin
+from machine import Pin, Signal
 import g_os
 
 # Create LEDs
-Led1 = Pin(2, Pin.OUT)
-Led2 = Pin(16, Pin.OUT)
+Led1_pin = Pin(16, Pin.OUT)
+Led2_pin = Pin(2, Pin.OUT)
+
+Led1 = Signal(Led1_pin, invert=False)
+Led2 = Signal(Led2_pin, invert=True)
+
+# Both Leds off
+Led1.off()
+Led2.off()
 
 # Create Task callbacks 
 def T1Cbk():
