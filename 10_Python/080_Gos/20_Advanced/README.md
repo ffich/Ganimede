@@ -13,7 +13,7 @@ After this you create a scheduler (contructor sch()) and then add the task to th
 import g_os
 
 def myTaskCbk():
-  print("I'm a Task")
+  print("I'm a Task and I run at 1000ms")
 
 myTask = g_os.task("MyTask", 1000, myTaskCbk)
 mySched = g_os.sch()
