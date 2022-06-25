@@ -11,15 +11,11 @@ After this you create a scheduler (contructor sch()) and then add the task to th
 
 ```
 def myTaskCbk():
-
   print("I'm a Task")
 
 myTask = g_os.task("MyTask", 1000, myTaskCbk)
-
 mySched = g_os.sch()
-
 mySched.add_task(myTask)
-
 mySched.start()
 ```
 
