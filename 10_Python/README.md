@@ -52,11 +52,11 @@
   - Machine Learning (F)
 
 - G-OS (Ganimede OS)
-  - Basic (F)
-  - Advanced (F)
-  - State Machine (F)
-  - LedBlink State Machine (F)
-  - Project Hyerarchy (F)
-  - InterProcess Communication (F)
+  - Basic
+  - Advanced
+  - State Machine
+  - LedBlink State Machine
+  - Project Hyerarchy
+  - InterProcess Communication
 
 
