@@ -1,9 +1,9 @@
-import fsm
-from time import sleep
+import g_fsm
+import g_os
 
-myVar = 0
+myVar = 1
 
-sm = fsm.StateMachine()
+sm = g_fsm.StateMachine()
 
 def State1 ():
     print("Hello World!")
@@ -40,7 +40,12 @@ sm.add_state("STATE4", State4)
 sm.add_state("STOP", Stop)
 sm.start_fsm("STATE1", "STOP")
 
-while True:
-    sm.run_fsm()
-    sleep(1)
+def myTaskCbk():
+  sm.run_fsm()
+
+myTask = g_os.task("MyTask", 1000, myTaskCbk)
+mySched = g_os.sch()
+mySched.add_task(myTask)
+mySched.start()
+
     

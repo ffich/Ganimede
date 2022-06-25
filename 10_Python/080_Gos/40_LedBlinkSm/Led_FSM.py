@@ -1,7 +1,12 @@
-from fsm import StateMachine
+from g_fsm import StateMachine
 from time import sleep_ms
 from machine import Pin
 import g_os
+
+TASK_PERIOD_MS = 1
+
+LED_ON_MS = 10
+LED_OFF_MS = 990
 
 # Led object
 LED = Pin(16, Pin.OUT)
@@ -27,13 +32,13 @@ def WaitState():
     global counter 
     
     if BlinkSts is BLINK_SHORT:
-        if counter <= 2: # Blink at 20ms
+        if counter <= (LED_ON_MS/TASK_PERIOD_MS): # Led on for LED_ON_MS
             counter += 1
         else:
             BlinkSts = BLINK_LONG
             counter = 0
     else:
-        if counter <= 50: # LED off for 0.5 seconds
+        if counter <= (LED_OFF_MS/TASK_PERIOD_MS): # Led off for LED_OFF_MS
             counter += 1
         else:
             BlinkSts = BLINK_SHORT
@@ -52,14 +57,14 @@ def BlinkState():
 # Initialize the state machine
 led_sm.add_state(WaitSt, WaitState)
 led_sm.add_state(BlinkSt, BlinkState)
-led_sm.start_fsm(WaitSt, "STOP")
+led_sm.start_fsm(WaitSt)
 
 # Create a stask for the FSM
 def T1Cbk():
     led_sm.run_fsm()
     
-# Create Tasks @ 10ms
-T1 = g_os.task("Task1", 10, T1Cbk)
+# Create Tasks @ TASK_PERIOD_MS (10 ms)
+T1 = g_os.task("Task1", TASK_PERIOD_MS, T1Cbk)
 
 # Create the scheduler
 mySched = g_os.sch()

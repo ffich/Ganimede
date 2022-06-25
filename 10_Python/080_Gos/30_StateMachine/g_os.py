@@ -1,7 +1,6 @@
-# G-OS: Ganimede OS
-# Simple cooperative os library with virtual timing and IPC features.
+# G_OS: Ganimede OS
+# Simple cooperative os library
 # Written by: Francesco Ficili
-
 import time
 
 # Constants Values

@@ -9,7 +9,7 @@ class StateMachine:
     def add_state(self, name, handler):
         self.handlers[name] = handler
         
-    def start_fsm(self, startState, endState):
+    def start_fsm(self, startState, endState = "NO_ENDING_STATE"):
         self.state = startState
         self.startState = startState
         self.endState = endState
