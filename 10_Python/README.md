@@ -21,10 +21,10 @@
   - PIR Sensor
 
 - Actuators
-  - Neopixels (F)
+  - Neopixels
   - Stepper (F)
   - DC Mortor Control (F)
-  - Servo (F)
+  - Servo
   - Buzzer (F)
 
 - Wireless
