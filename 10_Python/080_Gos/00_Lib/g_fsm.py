@@ -1,3 +1,7 @@
+# G-FSM: Ganimede FSM
+# Simple object oriented FSM library for Ganimede Board
+# Written by: Francesco Ficili
+
 class StateMachine:
     def __init__(self):
         self.handlers = dict()
