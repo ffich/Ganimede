@@ -1,5 +1,5 @@
 # Ganimede
-Public Repository for Ganimede board family. 
+Public Repository for Ganimede board family software examples.
 
 # Repo Description
 This repo contains some getting started material and some example for using Ganimede with Python, C/C++ and Javascript.
