@@ -71,17 +71,13 @@ The following examples are provided:
   - DHT11
   - Thermo Click (TM102)
   - Ultrasonic Distance Sensor (Range Finder)
-  - BME Sensor (F)
-  - Air Quality Sensor (F)
   - DS18B20
   - PIR Sensor
 
 - Actuators
   - Neopixels
-  - Stepper (F)
-  - DC Mortor Control (F)
   - Servo
-  - Buzzer (F)
+  - Buzzer
 
 - Wireless
   - AP webserver
@@ -90,29 +86,31 @@ The following examples are provided:
   - AP Conn Library (and webpages exampels)
 
 - Communication
-  - CAN (F)
-  - RS485 (F)
+  - CAN
+  - RS485
 
 - IoT 
-  - MQTT Basic (A)
-  - MQTT BME sensor (A)
-  - MQTT Relay (A)
+  - MQTT Basic
+  - MQTT Relay
 
 - Miscellaneous
-  - File System (A)
-  - Watchdog (A)
-  - RTC (A)
+  - File System
+  - Watchdog
+  - RTC
   - Morse Code
   - uButton
-  - uAsyncIO (F)
-  - Machine Learning (F)
+  - uAsyncIO
+  - Machine Learning
 
-- G-OS (Ganimede OS)
-  - Basic
-  - Advanced
-  - State Machine
-  - LedBlink State Machine
-  - Project Hyerarchy
-  - InterProcess Communication
+## Project List
+- OLED meteo statio
+- Neopixel Game
+- Telegram relay
+- Webserver Meteo Station
+- Moodlamp
+- Rover
+- Air quality Station
+- Intrusion detection
+
 
 
