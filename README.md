@@ -37,9 +37,7 @@ The hardware details of Ganimede.E12 are resumed in the picture below:
 If you want more information you can have a look at the [Ganimede.E12 Datasheet](https://2492ae4f-d323-49c0-bc1e-8d5936f83a9d.usrfiles.com/ugd/2492ae_11933c1aee514b55b51fd540d7772119.pdf) and to the [Ganimede.E12 Product Page](https://frafich.wixsite.com/jupitersystem/product-page/ganimede-e12).
 
 # Ganimede.E32
-The hardware details of Ganimede.E32are resumed in the picture below:
-
-(To be added)
+Ganimede.E32 is currently under development.
 
 ## Main characteristics of Ganimede.E32:
 - USB connection for communication, Power and Flashing
@@ -53,6 +51,4 @@ The hardware details of Ganimede.E32are resumed in the picture below:
 - 2x Neopixel/1-wire Connector
 - 1x OLED Connectors
 - 1x SRF04 Connector
-
-If you want more information you can have a look at the [Ganimede.E32 Datasheet](link) and to the [Ganimede.E32 Product Page](link).
 
